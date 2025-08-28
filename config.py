@@ -1,0 +1,24 @@
+# MQTT Configuration
+MQTT_BROKER = "broker.hivemq.com"
+MQTT_PORT = 1883
+MQTT_TOPIC_SUBSCRIBE = "plc/commands/#"
+MQTT_TOPIC_PUBLISH = "plc/status"
+MQTT_CLIENT_ID = "plc_bridge_001"
+MQTT_USERNAME = None
+MQTT_PASSWORD = None
+
+# Serial Configuration for Panasonic FP0
+SERIAL_PORT = "COM3"
+SERIAL_BAUDRATE = 9600
+SERIAL_TIMEOUT = 1
+SERIAL_PARITY = "E"
+SERIAL_STOPBITS = 1
+SERIAL_BYTESIZE = 7
+
+# Panasonic FP0 Specific Configuration
+PLC_STATION_NUMBER = "00"
+PLC_PASSWORD = "0000"
+
+# MEWTOCOL Commands
+MEWTOCOL_HEADER = "%"
+MEWTOCOL_DELIMITER = "\r\n"
